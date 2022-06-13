@@ -1,7 +1,8 @@
 import type { MetaFunction } from '@remix-run/node'
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 
-import styles from './styles/build.css'
+import { SocialLinks } from '~/components'
+import styles from '~/styles/build.css'
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -27,7 +28,13 @@ export default function App() {
         <Links />
       </head>
       <body className="bg-[#111111] text-zinc-100">
-        <Outlet />
+        <main className="flex flex-col justify-between min-h-screen p-4 mx-auto sm:p-6 max-w-9xl">
+          <Outlet />
+          <footer className="mt-8">
+            <SocialLinks />
+          </footer>
+        </main>
+
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
