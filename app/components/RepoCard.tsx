@@ -16,12 +16,14 @@ export const RepoCard = ({ repo }: Props) => (
       {repo.description}
     </div>
     <video
-      autoPlay
+      autoPlay={true}
+      playsInline
       loop
       muted // wont autoplay unless muted (even though no sound)
       className="object-cover my-4 rounded-md aspect-video"
-      src={`${CLOUDFRONT_URL}/projects/${repo.name}/demo.mp4`}
-    />
+    >
+      <source src={`${CLOUDFRONT_URL}/projects/${repo.name}/demo.mp4`} type="video/mp4" />
+    </video>
 
     <div className="flex mt-1 text-xs font-medium sm:text-sm text-zinc-400">
       <div className="flex items-center">
