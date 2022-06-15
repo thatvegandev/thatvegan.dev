@@ -1,5 +1,7 @@
 import { Link } from '@remix-run/react'
 
+import { CLOUDFRONT_URL } from '~/lib/constants'
+
 type Props = {
   repo: any
 }
@@ -13,10 +15,12 @@ export const RepoCard = ({ repo }: Props) => (
     <div className="mt-1 mb-3 text-sm font-medium text-zinc-400 line-clamp-1 sm:text-base">
       {repo.description}
     </div>
-    <img
+    <video
+      autoPlay
+      loop
+      controls={false}
       className="w-full my-6 rounded-md aspect-video"
-      src={`https://github.com/thatvegandev/assets/raw/main/${repo.name}/demo.gif`}
-      alt={`${repo.name} demo`}
+      src={`${CLOUDFRONT_URL}/assets/${repo.name}/demo.webm`}
     />
 
     <div className="flex mt-1 text-sm font-medium sm:text-base text-zinc-400">
