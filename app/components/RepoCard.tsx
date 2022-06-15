@@ -20,7 +20,7 @@ export const RepoCard = ({ repo }: Props) => (
       loop
       controls={false}
       className="w-full my-6 rounded-md aspect-video"
-      src={`${CLOUDFRONT_URL}/assets/${repo.name}/demo.webm`}
+      src={`${CLOUDFRONT_URL}/projects/${repo.name}/demo.webm`}
     />
 
     <div className="flex mt-1 text-sm font-medium sm:text-base text-zinc-400">
