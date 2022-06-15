@@ -7,6 +7,7 @@ import styles from '~/styles/build.css'
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
   title: 'thatvegan.dev',
+  description: 'the internet nook of colby thomas',
   viewport: 'width=device-width,initial-scale=1',
 })
 
