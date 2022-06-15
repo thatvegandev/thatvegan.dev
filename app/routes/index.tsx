@@ -18,21 +18,23 @@ export default function IndexPage() {
   return (
     <div className="w-full">
       <div className="flex flex-col items-center">
-        <img
-          src={user.avatarUrl}
-          alt={user.name}
-          className="rounded-lg h-28 w-28 sm:h-36 sm:w-36"
-        />
-        <div className="flex flex-col items-center mt-2 sm:mt-4">
-          <h1 className="text-xl font-bold sm:text-3xl">{user.name}</h1>
-          <a
-            href="https://github.com/thatvegandev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-semibold rounded-md sm:text-lg text-zinc-400 focus:outline-none focus:ring-2 focus:ring-violet-400"
-          >
-            @<span className="hover:underline">{user.login}</span>
-          </a>
+        <div className="flex items-center">
+          <img
+            src={user.avatarUrl}
+            alt={user.name}
+            className="mr-3 rounded-lg h-14 w-14 sm:h-16 sm:w-16"
+          />
+          <div className="flex flex-col items-start">
+            <h1 className="text-xl font-bold sm:text-2xl">{user.name}</h1>
+            <a
+              href="https://github.com/thatvegandev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold rounded-md sm:text-base text-zinc-400 focus:outline-none focus:ring-2 focus:ring-violet-400"
+            >
+              @<span className="hover:underline">{user.login}</span>
+            </a>
+          </div>
         </div>
       </div>
       <div className="mt-4 sm:mt-8">
