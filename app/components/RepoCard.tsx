@@ -20,7 +20,7 @@ export const RepoCard = ({ repo }: Props) => (
       loop
       muted // wont autoplay unless muted (even though no sound)
       className="object-cover my-6 rounded-md aspect-video"
-      src={`${CLOUDFRONT_URL}/projects/${repo.name}/demo.webm`}
+      src={`${CLOUDFRONT_URL}/projects/${repo.name}/demo.mp4`}
     />
 
     <div className="flex mt-1 text-sm font-medium sm:text-base text-zinc-400">
