@@ -18,8 +18,8 @@ export const RepoCard = ({ repo }: Props) => (
     <video
       autoPlay
       loop
-      controls={false}
-      className="w-full my-6 rounded-md aspect-video"
+      muted // wont autoplay unless muted (even though no sound)
+      className="object-cover my-6 rounded-md aspect-video"
       src={`${CLOUDFRONT_URL}/projects/${repo.name}/demo.webm`}
     />
 
