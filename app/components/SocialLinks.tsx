@@ -44,10 +44,7 @@ export const SocialLinks = () => (
         aria-label={`follow me on ${label}`}
         className="rounded-md focus:outline-none focus:ring-2 focus:ring-violet-400"
       >
-        <Icon
-          size={28}
-          className="text-zinc-400 hover:text-zinc-300 cursor-pointer transition-all duration-150 hover:-translate-y-[2px]"
-        />
+        <Icon size={28} className="cursor-pointer text-zinc-500" />
       </a>
     ))}
   </div>

@@ -9,7 +9,7 @@ type Props = {
 export const RepoCard = ({ repo }: Props) => (
   <Link
     to={`/repo/${repo.name}`}
-    className="overflow-hidden rounded-lg bg-zinc-900 hover:bg-[#1a1a1e] transition-colors duration-150 ease-in-out shadow p-5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400"
+    className="p-5 overflow-hidden rounded-lg shadow cursor-pointer bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-violet-400"
   >
     <div className="mb-2 text-lg font-semibold text-white truncate sm:text-xl">{repo.name}</div>
     <div className="mt-1 text-xs font-medium text-zinc-400 line-clamp-1 sm:text-sm">
