@@ -38,12 +38,10 @@ export default function IndexPage() {
         </div>
       </div>
       <div className="mt-4 sm:mt-8">
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 xl:grid-cols-3">
-          {user.pinnedItems.nodes
-            .filter((repo: any) => !['dotfiles'].includes(repo.name))
-            .map((repo: any) => (
-              <RepoCard repo={repo} key={repo.id} />
-            ))}
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 ">
+          {user.pinnedItems.nodes.map((repo: any) => (
+            <RepoCard repo={repo} key={repo.id} />
+          ))}
         </div>
       </div>
     </div>
